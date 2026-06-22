@@ -28,3 +28,7 @@ Khởi tạo môi trường và chạy thử nghiệm cục bộ chỉ với và
 python -m venv .venv
 .\.venv\Scripts\activate
 pip install -r requirements_core.txt
+**Bước 2: Xác thực Pipeline**
+python run_model_zoo_demo.py
+**Bước 3: Khởi chạy Dashboard Web**
+uvicorn app:app --reload --host 127.0.0.1 --port 8000
